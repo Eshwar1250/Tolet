@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:id="@+id/relative"
+    android:background="@drawable/housee">
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="183dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border1"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/email"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="161dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="239dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/pass"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/conpassword"
+        android:layout_width="295dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="170dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/cpass"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:text="@string/register"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:text="@string/already_a_member_login"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/darkblue"/>
+
+</RelativeLayout>

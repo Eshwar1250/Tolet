@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/post"
+        android:id="@+id/post"
+        android:icon="@drawable/ic_post"/>
+    <item
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/home"/>
+    <item
+        android:title="@string/Banquet_halls"
+        android:id="@+id/halls"
+        android:icon="@drawable/ic_banquet"/>
+
+
+
+</menu>

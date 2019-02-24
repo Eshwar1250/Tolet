@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".House">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:fontFamily="@font/futur"
+        android:paddingTop="20dp"
+        android:text="@string/enter_details"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:hint="@string/owner_name"
+        android:id="@+id/name"/>
+
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:id="@+id/type_house"
+        android:layout_height="60dp"
+        android:spinnerMode="dialog"
+        android:prompt="@string/type_prompt"
+        android:entries="@array/type_arrays"
+        android:textAlignment="center"
+        />
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:id="@+id/bhk"
+        android:layout_height="60dp"
+        android:spinnerMode="dialog"
+        android:prompt="@string/bdrooms_prompt"
+        android:entries="@array/bdrooms_arrays"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/location"
+        android:hint="@string/enter_location"
+        android:textAlignment="center" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/address"
+        android:hint="@string/enter_complete_address"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/facilities"
+        android:textSize="23sp"
+        android:textColor="#000000"
+        />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/water_facility"
+        android:textSize="18sp" />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/electricity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/electricity_facility"/>
+    <android.support.v7.widget.AppCompatCheckBox
+        android:layout_width="match_parent"
+        android:id="@+id/parking"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/parking_facility" />
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/security"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_the_rent"
+        android:inputType="number"
+        android:id="@+id/rent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_contact_number"
+        android:inputType="number"
+        android:id="@+id/phn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/upload_an_image_of_the_house"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/imgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="70dp"
+        android:src="@android:drawable/ic_menu_gallery" />
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@android:drawable/gallery_thumb"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="153dp"
+        android:layout_height="65dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:text="@string/post"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/futur"
+        android:textColor="@color/darkblue"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="30dp"/>
+  </LinearLayout>
+</ScrollView>

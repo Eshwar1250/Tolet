@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/house3"
+    tools:context=".Homepage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/houses"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:background="@color/white"
+        android:textColor="@color/darkblue"
+        android:fontFamily="@font/futur"
+        android:padding="10dp"/>
+
+
+    <ListView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="441dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:stretchMode="columnWidth" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:background="@drawable/bottom_shadow" />
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            design:menu="@menu/bottombar" />
+
+    </FrameLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
